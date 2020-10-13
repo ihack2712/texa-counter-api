@@ -15,7 +15,7 @@ The IP is then hashed and stored as a file to prevent the IP from incrementing t
 ## Running the server.
 
 ```sh
-deno run --allow-net --allow-read=. --allow-write=. https://raw.githubusercontent.com/ihack2712/texa-counter-api/master/server.ts
+deno run --allow-env --allow-net --allow-read=. --allow-write=. https://raw.githubusercontent.com/ihack2712/texa-counter-api/master/server.ts
 ```
 
 If you wish to use a different port you can use a PORT environment variable, or you can change the host and port by adding an argument to the run command:
@@ -23,6 +23,7 @@ If you wish to use a different port you can use a PORT environment variable, or 
 ```sh
 deno run \
 	--allow-net \
+	--allow-env \
 	--allow-read=. \
 	--allow-write=. \
 	https://raw.githubusercontent.com/ihack2712/texa-counter-api/master/server.ts \
